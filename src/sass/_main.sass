@@ -1,0 +1,395 @@
+.section-main 
+	height: 752px
+	/*border: 1px solid red*/
+	background-image: url('../img/section-main-bg.jpg')
+	background-position: 9px
+
+.header 
+	height: 74px
+	/*border: 1px solid red*/
+	background-image: url('../img/logo.png')
+	background-repeat: no-repeat
+	background-position: 0 23px
+
+.description-h-wrapper 
+	padding: 30px 0 0 346px
+	/*border: 1px solid green*/
+
+.description-h 
+	width: 220px
+	height: 37px
+	/*border: 1px solid red*/
+	display: inline-block
+
+	&__img 
+		float: left
+	
+	&__part1, &__part2 
+		display: inline-block
+		color: #ededed
+
+	&__part1 
+		margin: 1px 0 0 8px
+		font-size: 1.5em
+		letter-spacing: 0.03em
+
+	&__part2 
+		margin-left: 1px
+		font-size: 1.1em
+		letter-spacing: 0.01em
+
+.title 
+	font-family: 'Roboto Condensed', sans-serif
+	font-size: 3.72em
+	color: #ededed
+	text-transform: uppercase
+	letter-spacing: 0.001em
+	margin-top: 18px
+	background: linear-gradient(to right, #f0e394 0%, #b49b52 100%)
+	-webkit-background-clip: text
+	-webkit-text-fill-color: transparent
+
+.main-wrapper 
+	display: flex
+	/*justify-content: space-between*/
+	margin-top: 9px
+
+.description, .discount, .order-form 
+	height: 555px
+	color: #ffffff
+	display: inline-block
+
+.description 
+	background-image: url('../img/bottle.png')
+	background-repeat: no-repeat
+	background-position: -3px 243px
+	width: 372px
+	/*border: 1px solid red*/
+
+	&__title 
+		font-family: 'Roboto', sans-serif
+		font-size: 1.27em
+		line-height: 1.33em
+		letter-spacing: 0.07em
+		width: 340px
+	
+	&__text 
+		margin-top: 18px
+	
+	&__item 
+		background-image: url('../img/check-mark.png')
+		background-repeat: no-repeat
+		height: 24px
+		padding-left: 35px
+		margin-bottom: 13px
+		-webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(red), to(rgba(0, 0, 0, 0))) 100% 1
+		border-bottom: 1px solid
+
+.discount 
+	/*border: 1px solid green*/
+	display: flex
+	align-items: flex-end
+	background-image: url('../img/50.png')
+	background-repeat: no-repeat
+	background-position: 0 351px
+	width: 280px
+
+	&__text 
+		margin-bottom: 52px
+		text-align: center
+		font-family: 'PT Sans Narrow', sans-serif
+		font-size: 1.1em
+		letter-spacing: 0.05em
+		word-spacing: -0.1em
+
+.order-form 
+	/*border: 1px solid blue*/
+	width: 290px
+
+.timer 
+	display: flex
+	margin: 5px 0 0 37px
+	position: relative
+
+	&__item 
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 47px
+		height: 54px
+		background: #f6f6f6
+		border: #ffffff
+		border-radius: 5px
+		margin-right: 5px
+		position: relative
+
+		&:after 
+			position: absolute
+			content: ''
+			top: 27px
+			width: 45px
+			height: 1px
+			background: #cecece
+		
+		&:nth-child(1) 
+			opacity: 0.7
+
+	&__number 
+		color: #000000
+		font-family: 'PT Sans Narrow', sans-serif
+		font-weight: 700
+		font-size: 3.1em
+	
+	&__text 
+		position: absolute
+		content: ''
+		top: 6px
+		right: -34px
+		font-family: 'PT Sans Narrow', sans-serif
+		font-size: 1.1em
+		line-height: 1.1em
+		letter-spacing: 0.04em
+
+.form-wrapper 
+	width: 290px
+	height: 410px
+	margin: 30px 0 0 38px
+	background: #ffffff
+	border-radius: 10px
+	position: relative
+	overflow: hidden
+
+	&:before 
+		position: absolute
+		content: ''
+		top: -34px
+		left: -100px
+		width: 490px
+		height: 150px
+		border-radius: 50%
+		background: linear-gradient(167deg, #ad3a18 40%, #431309 53%)
+
+.form-p 
+	margin-top: 136px
+
+	&__input 
+		width: 255px
+		height: 55px
+		border: 1px solid #e1e1e1
+		border-radius: 5px
+		margin: 0 0 15px 17px
+		background: #f6f6f6
+		padding: 0 0 5px 14px
+		color: #000000
+		font-family: 'Open Sans', sans-serif
+		font-size: 0.879em
+
+		&::placeholder 
+			color: #929292
+
+	&__button 
+		width: 255px
+		height: 60px
+		border-radius: 5px
+		margin: 10px 0 0 17px
+		background: linear-gradient(to bottom, #fa4a1b 0%, #d73f17 100%)
+		color: #ffffff
+		font-family: 'PT Sans Narrow', sans-serif
+		font-size: 1.35em
+		font-weight: 700
+		text-transform: uppercase
+		padding: 0 0 2px 42px
+		font-weight: 700
+		letter-spacing: 0.01em
+		position: relative
+
+		&:before 
+			position: absolute
+			content: ''
+			top: 0px
+			left: 0px
+			width: 51px
+			height: 60px
+			/*background: #b13412*/
+			background-image: url('../img/bracket.png')
+			background-repeat: no-repeat
+			background-position: center center
+			background-color: #b13412
+			border-radius: 5px 0 0 5px
+
+.security 
+	height: 17px
+	background-image: url('../img/lock.png')
+	background-repeat: no-repeat
+	font-family: 'PT Sans Narrow', sans-serif
+	color: #000000
+	margin: 23px 0 0 27px
+	padding-left: 22px
+	letter-spacing: -0.016em
+
+.section-question 
+	height: 375px
+	/*border: 1px solid red*/
+	background-image: url('../img/section-question-bg.jpg')
+	background-position: 40px -3px
+	background-repeat: no-repeat
+	/*border: 1px solid red*/
+
+	&__wrapper 
+		width: 641px
+		margin: 0 auto
+
+.text 
+	color: #ffffff
+	text-align: center
+	margin-top: 4px
+	font-size: 1.35em
+	letter-spacing: 0.003em
+	word-spacing: 0.03em
+	padding-left: 4px
+
+.form-q 
+	width: 641px
+	height: 261px
+	margin: 24px 0 0 4px
+	background: #ffffff
+	border-radius: 10px
+	text-align: center
+
+	&__title 
+		text-transform: uppercase
+		font-size: 1.47em
+		padding: 44px 0 0 68px
+		letter-spacing: 0.0145em
+		position: relative
+
+		&:before 
+			position: absolute
+			content: '1'
+			top: 31px
+			left: 114px
+			width: 60px
+			height: 60px
+			border-radius: 50%
+			background: #e5e5e5
+			padding-top: 9px
+			font-size: 1.3em
+
+	&__button 
+		width: 250px
+		height: 80px
+		border-radius: 10px
+		background: #fc481a
+		margin: 57px 11px 75px 4px
+		text-transform: uppercase
+		color: #ffffff
+		font-weight: 700
+		font-size: 1.52em
+		padding: 2px 3px 1px 0px
+		letter-spacing: -0.01em
+		position: relative
+		overflow: hidden
+		z-index: 1
+
+		&:before 
+			position: absolute
+			content: ''
+			top: -29px
+			left: -25px
+			width: 300px
+			height: 75px
+			border-radius: 50%
+			background: linear-gradient(to bottom, #fc552a 25%, #fc633c 100%)
+			z-index: -1
+
+.section-description 
+	/*border: 1px solid red*/
+	background-image: url('../img/section-description-bg.jpg')
+	background-position: 440px
+	background-repeat: no-repeat
+	background-color: #ffffff
+	height: 392px
+	border-radius: 10px
+	margin-top: 91px
+
+	&__content 
+		/*border: 1px solid red*/
+		width: 590px
+		height: 313px
+		padding: 11px 0 0 40px
+		line-height: 2.44em
+	
+	&__text 
+		line-height: 1.63em
+		font-size: 1em
+		padding: 16px 1px 2px 1px
+		word-spacing: 0.17em
+
+		span 
+			font-weight: 700
+			text-transform: uppercase
+
+.section-advantages 
+	background-image: url('../img/section-advantages-bg.jpg')
+	background-position: -80px 164px
+	background-repeat: no-repeat
+	height: 753px
+	/*border: 1px solid red*/
+
+	&__wrapper 
+		padding: 25px 22px 0 0
+	
+	&__content 
+		/*border: 1px solid red*/
+		margin: 26px 0 0 330px
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		width: 640px
+		height: 550px
+	
+	&__item1, &__item2, &__item3, &__item4, &__item5, &__item6 
+		width: 200px
+		height: 251px
+		background-color: #ffffff
+		border-radius: 10px
+		background-position: center top
+		background-repeat: no-repeat
+		font-weight: 700
+		text-align: center
+		padding-top: 189px	
+	
+	&__item1 
+		background-image: url('../img/section-advantages__item1.jpg')
+	
+	&__item2 
+		background-image: url('../img/section-advantages__item2.jpg')
+	
+	&__item3 
+		background-image: url('../img/section-advantages__item3.jpg')
+	
+	&__item4 
+		background-image: url('../img/section-advantages__item4.jpg')
+		margin-top: -18px
+	
+	&__item5 
+		background-image: url('../img/section-advantages__item5.jpg')
+		margin-top: -18px
+	
+	&__item6 
+		background-image: url('../img/section-advantages__item6.jpg')
+		margin-top: -18px
+
+.section-doctor 
+	height: 452px
+	margin-top: -33px
+
+	&__content 
+		height: 443px
+		background-image: url('../img/section-doctor-bg.jpg')
+		background-position: right
+		background-repeat: no-repeat
+		background-color: #ffffff
+		border-radius: 10px
+		padding-left: 39px
+

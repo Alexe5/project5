@@ -1,0 +1,5 @@
+ProjectTitle: pantomax
+
+PageList:
+- file: page.html
+  ready: 50
