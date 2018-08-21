@@ -11,18 +11,48 @@
 	background-repeat: no-repeat
 	background-position: 0 23px
 
+	+r(979)
+		background-position: 5px 23px
+
+	+r(700)
+		background-position: 5px 5px
+
 .description-h-wrapper 
 	padding: 30px 0 0 346px
 	/*border: 1px solid green*/
 
+	+r(979)
+		padding: 30px 0 0 0
+		float: right
+
+	+r(700)
+		padding: 18px 0 0 0
+
+	+r(575)
+		float: left
+		padding: 55px 0 0 5px
+
 .description-h 
-	width: 220px
+	max-width: 100%
 	height: 37px
 	/*border: 1px solid red*/
 	display: inline-block
+	margin-right: 26px
+
+	+r(979)
+		margin-right: 5px
+
+	// +r(700)
+	// 	display: block
 
 	&__img 
 		float: left
+
+		+r(700)
+			height: 25px
+
+		+r(575)
+			height: 15px
 	
 	&__part1, &__part2 
 		display: inline-block
@@ -33,10 +63,22 @@
 		font-size: 1.5em
 		letter-spacing: 0.03em
 
+		+r(700)
+			font-size: 1em
+
+		+r(575)
+			font-size: 0.55em
+
 	&__part2 
 		margin-left: 1px
 		font-size: 1.1em
 		letter-spacing: 0.01em
+
+		+r(700)
+			font-size: 0.75em
+
+		+r(575)
+			font-size: 0.55em
 
 .title 
 	font-family: 'Roboto Condensed', sans-serif
