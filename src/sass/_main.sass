@@ -1,8 +1,13 @@
 .section-main 
-	height: 752px
+	// height: 752px
+	height: 100%
 	/*border: 1px solid red*/
 	background-image: url('../img/section-main-bg.jpg')
-	background-position: 9px
+	background-repeat: no-repeat
+	background-position: 9px 0
+
+	+r(979)
+		background-position: center 0
 
 .header 
 	height: 74px
@@ -105,16 +110,26 @@
 	/*justify-content: space-between*/
 	margin-top: 9px
 
+	+r(810)
+		flex-wrap: wrap
+		justify-content: space-between
+
+	+r(650)
+		margin-top: 0
+
+	+r(569)
+		justify-content: center
+
 .description, .discount, .order-form 
 	height: 555px
 	color: #ffffff
 	display: inline-block
 
 .description 
-	background-image: url('../img/bottle.png')
-	background-repeat: no-repeat
-	background-position: -3px 243px
-	width: 372px
+	// background-image: url('../img/bottle.png')
+	// background-repeat: no-repeat
+	// background-position: -3px 243px
+	max-width: 372px
 	/*border: 1px solid red*/
 
 	&__title 
@@ -122,7 +137,7 @@
 		font-size: 1.27em
 		line-height: 1.33em
 		letter-spacing: 0.07em
-		width: 340px
+		max-width: 340px
 	
 	&__text 
 		margin-top: 18px
@@ -136,30 +151,68 @@
 		-webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(red), to(rgba(0, 0, 0, 0))) 100% 1
 		border-bottom: 1px solid
 
+	&__img
+		// width: 100%
+		margin: 23px 0px 0px -3px;
+
+		+r(569)
+			width: 100%
+
 .discount 
 	/*border: 1px solid green*/
-	display: flex
-	align-items: flex-end
-	background-image: url('../img/50.png')
-	background-repeat: no-repeat
-	background-position: 0 351px
+	// display: flex
+	// align-items: flex-end
+	// background-image: url('../img/50.png')
+	// background-repeat: no-repeat
+	// background-position: 0 351px
 	width: 280px
 
+	+r(810)
+		display: flex
+		justify-content: space-between
+		align-items: center
+		order: 1
+		width: 100%
+		height: 100%
+
+	+r(661)
+		flex-direction: column
+		width: min-content
+
+	+r(569)
+		order: 0
+
+	&__img
+		width: 100%
+		margin-top: 351px
+
+		+r(810)
+			width: auto
+			margin-top: 0
+
 	&__text 
-		margin-bottom: 52px
+		margin-top: 8px
 		text-align: center
 		font-family: 'PT Sans Narrow', sans-serif
 		font-size: 1.1em
 		letter-spacing: 0.05em
 		word-spacing: -0.1em
 
+		+r(810)
+			margin-top: 0
+			font-size: 1.5em
+
 .order-form 
 	/*border: 1px solid blue*/
 	width: 290px
+	margin-left: 38px
+
+	+r(700)
+		margin-left: 0
 
 .timer 
 	display: flex
-	margin: 5px 0 0 37px
+	margin: 5px 0 0 -1px
 	position: relative
 
 	&__item 
@@ -194,8 +247,8 @@
 	&__text 
 		position: absolute
 		content: ''
-		top: 6px
-		right: -34px
+		top: 7px
+		right: 3px
 		font-family: 'PT Sans Narrow', sans-serif
 		font-size: 1.1em
 		line-height: 1.1em
@@ -204,7 +257,7 @@
 .form-wrapper 
 	width: 290px
 	height: 410px
-	margin: 30px 0 0 38px
+	margin: 30px 0 0 0
 	background: #ffffff
 	border-radius: 10px
 	position: relative
@@ -284,6 +337,7 @@
 	background-image: url('../img/section-question-bg.jpg')
 	background-position: 40px -3px
 	background-repeat: no-repeat
+	margin-top: 24px;
 	/*border: 1px solid red*/
 
 	&__wrapper 
