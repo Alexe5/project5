@@ -153,7 +153,7 @@
 
 	&__img
 		// width: 100%
-		margin: 23px 0px 0px -3px;
+		margin: 23px 0px 0px -3px
 
 		+r(569)
 			width: 100%
@@ -209,6 +209,9 @@
 
 	+r(700)
 		margin-left: 0
+
+	+r(661)
+		height: 100%
 
 .timer 
 	display: flex
@@ -337,12 +340,28 @@
 	background-image: url('../img/section-question-bg.jpg')
 	background-position: 40px -3px
 	background-repeat: no-repeat
-	margin-top: 24px;
+	margin-top: 24px
 	/*border: 1px solid red*/
+	
+	+r(979)
+		background-position: center top
+
+	+r(661)
+		margin-top: 0
+
+	+r(569)
+		background-position: top center
+		background-size: contain
+		height: auto
+
 
 	&__wrapper 
 		width: 641px
 		margin: 0 auto
+
+		+r(700)
+			width: auto
+			padding: 0 25px
 
 .text 
 	color: #ffffff
@@ -353,6 +372,12 @@
 	word-spacing: 0.03em
 	padding-left: 4px
 
+	+r(661)
+		margin-top: 0
+
+	+r(537)
+			font-size: 1em
+
 .form-q 
 	width: 641px
 	height: 261px
@@ -361,12 +386,22 @@
 	border-radius: 10px
 	text-align: center
 
+	+r(979)
+		margin: 5px 0 0 0
+
+	+r(700)
+		width: auto
+		height: auto
+
 	&__title 
 		text-transform: uppercase
 		font-size: 1.47em
 		padding: 44px 0 0 68px
 		letter-spacing: 0.0145em
 		position: relative
+
+		+r(700)
+			padding: 25px 35px 0 70px
 
 		&:before 
 			position: absolute
@@ -379,6 +414,10 @@
 			background: #e5e5e5
 			padding-top: 9px
 			font-size: 1.3em
+
+			+r(700)
+				top: 5px
+				left: 5px
 
 	&__button 
 		width: 250px
@@ -396,6 +435,17 @@
 		overflow: hidden
 		z-index: 1
 
+		+r(700)
+			margin: 25px 0
+			padding: 0
+
+		+r(569)
+			padding: 15px 20px
+			width: auto
+			height: auto
+			font-size: 1em
+			// margin: 25px 0px 25px 0px
+
 		&:before 
 			position: absolute
 			content: ''
@@ -406,6 +456,10 @@
 			border-radius: 50%
 			background: linear-gradient(to bottom, #fc552a 25%, #fc633c 100%)
 			z-index: -1
+
+			+r(569)
+				top: -50px
+				left: -85px
 
 .section-description 
 	/*border: 1px solid red*/
