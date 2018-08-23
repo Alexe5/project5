@@ -148,8 +148,22 @@
 		height: 24px
 		padding-left: 35px
 		margin-bottom: 13px
-		-webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(red), to(rgba(0, 0, 0, 0))) 100% 1
-		border-bottom: 1px solid
+		// -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(red), to(rgba(0, 0, 0, 0))) 100% 1
+		// border-bottom: 1px solid
+		position: relative
+
+		&:nth-child(4)
+				position: inherit
+
+
+		&:after
+			position: absolute
+			content: ''
+			bottom: -6px
+			left: -25px
+			width: 266px
+			height: 1px
+			background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0))
 
 	&__img
 		// width: 100%
