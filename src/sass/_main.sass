@@ -416,6 +416,9 @@
 	+r(979)
 		background-position: center top
 
+	+r(700)
+		height: auto
+
 	+r(661)
 		margin-top: 0
 
@@ -542,15 +545,26 @@
 	margin-top: 91px
 
 	+r(979)
-		margin-top: 15px
+		margin: 15px 25px 0
+	
+	+r(661)
+		height: 100%
+		background-size: cover
 
-	// &__content 
-	// 	/*border: 1px solid red*/
-	// 	width: 590px
-	// 	// height: 313px
-	// 	padding: 11px 0 0 40px
-	// 	// padding: 11px 390px 0 40px
-	// 	line-height: 2.44em
+	+r(569)
+		// background-repeat: round
+		background-position: center
+
+	+r(425)
+		margin: 5px 5px 0
+
+	&__content
+		height: 100%
+		border-radius: 10px
+
+		+r(979)
+			background-color: rgba(255, 255, 255, 0.55)
+			padding: 0 5px
 	
 	&__text 
 		line-height: 1.63em
@@ -558,6 +572,10 @@
 		padding: 16px 1px 2px 41px
 		word-spacing: 0.17em
 		width: 590px
+
+		+r(661)
+			padding: 16px 5px 2px 5px
+			width: auto
 
 		span 
 			font-weight: 700
