@@ -152,9 +152,9 @@
 		// border-bottom: 1px solid
 		position: relative
 
-		&:nth-child(4)
-				position: inherit
-
+		&:nth-child(4):after
+			// position: inherit
+			height: 0
 
 		&:after
 			position: absolute
@@ -534,7 +534,7 @@
 				top: -50px
 				left: -85px
 
-.section-description 
+.section
 	/*border: 1px solid red*/
 	background-image: url('../img/section-description-bg.jpg')
 	background-position: right
@@ -580,6 +580,20 @@
 		span 
 			font-weight: 700
 			text-transform: uppercase
+
+	&_doctor
+		background-image: url('../img/section-doctor-bg.jpg')
+		height: 443px
+		margin-top: -33px
+
+		+r(569)
+			// background-position: left
+
+		+r(425)
+			background-position: -318px
+
+		+r(320)
+			background-position: -525px
 
 .section-advantages 
 	background-image: url('../img/section-advantages-bg.jpg')
