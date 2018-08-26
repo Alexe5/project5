@@ -98,6 +98,7 @@
 
 	+r(979)
 		font-size: 3em
+		margin-left: 25px
 
 	+r(780)
 		font-size: 2.5em
@@ -110,7 +111,13 @@
 	/*justify-content: space-between*/
 	margin-top: 9px
 
-	+r(810)
+	+r(979)
+		padding: 0 25px
+
+	+r(883)
+		background-color: rgba(0,0,0,0.5)
+
+	+r(840)
 		flex-wrap: wrap
 		justify-content: space-between
 
@@ -181,7 +188,7 @@
 	// background-position: 0 351px
 	width: 280px
 
-	+r(810)
+	+r(840)
 		display: flex
 		justify-content: space-between
 		align-items: center
@@ -200,7 +207,7 @@
 		width: 100%
 		margin-top: 351px
 
-		+r(810)
+		+r(840)
 			width: auto
 			margin-top: 0
 
@@ -212,7 +219,7 @@
 		letter-spacing: 0.05em
 		word-spacing: -0.1em
 
-		+r(810)
+		+r(840)
 			margin-top: 0
 			font-size: 1.5em
 
@@ -562,10 +569,9 @@
 		height: 100%
 		border-radius: 10px
 		position: relative
-		
-		&:after
+
+		.signature
 			position: absolute
-			content: ''
 			bottom: 18px
 			left: 362px
 			width: 185px
@@ -625,6 +631,9 @@
 	+r(954)
 		height: 100%
 		background-position: -80px bottom
+
+	+r(320)
+		background-image: none
 
 	&__wrapper 
 		// padding: 25px 22px 0 0
