@@ -626,7 +626,25 @@
 	background-position: -80px 164px
 	background-repeat: no-repeat
 	height: 753px
+	position: relative
+	z-index: -1
 	/*border: 1px solid red*/
+
+	&:before
+		position: absolute
+		content: ''
+		width: 248px
+		height: 195px
+		top: 558px
+		left: -80px
+		background-image: url('../img/section-advantages-bg.jpg')
+		background-repeat: no-repeat
+		background-position: left bottom
+
+		+r(979)
+			width: 0
+
+
 
 	+r(954)
 		height: 100%
