@@ -561,6 +561,21 @@
 	&__content
 		height: 100%
 		border-radius: 10px
+		position: relative
+		
+		&:after
+			position: absolute
+			content: ''
+			bottom: 18px
+			left: 362px
+			width: 185px
+			height: 64px
+			background-image: url('../img/signature.png')
+			background-repeat: no-repeat
+			background-position: right
+
+			+r(662)
+				display: none
 
 		+r(979)
 			background-color: rgba(255, 255, 255, 0.55)
@@ -577,8 +592,16 @@
 			padding: 16px 5px 2px 5px
 			width: auto
 
-		span 
-			font-weight: 700
+		&_doctor
+			line-height: 1.38em
+			// padding: 16px 1px 2px
+			letter-spacing: -0.021em
+			width: 620px
+
+	&__bold
+		font-weight: 700
+
+		&_uppercase
 			text-transform: uppercase
 
 	&_doctor
@@ -586,14 +609,11 @@
 		height: 443px
 		margin-top: -33px
 
-		+r(569)
-			// background-position: left
-
 		+r(425)
-			background-position: -318px
+			background-position: right
 
 		+r(320)
-			background-position: -525px
+			background-position: -375px
 
 .section-advantages 
 	background-image: url('../img/section-advantages-bg.jpg')
@@ -646,41 +666,41 @@
 		background-image: url('../img/section-advantages__item6.jpg')
 		margin-top: -18px
 
-.section-doctor 
-	height: 452px
-	margin-top: -33px
+// .section-doctor 
+// 	height: 452px
+// 	margin-top: -33px
 
-	&__content 
-		height: 443px
-		background-image: url('../img/section-doctor-bg.jpg')
-		background-position: right
-		background-repeat: no-repeat
-		background-color: #ffffff
-		border-radius: 10px
-		padding-left: 39px
-		position: relative
+// 	&__content 
+// 		height: 443px
+// 		background-image: url('../img/section-doctor-bg.jpg')
+// 		background-position: right
+// 		background-repeat: no-repeat
+// 		background-color: #ffffff
+// 		border-radius: 10px
+// 		padding-left: 39px
+// 		position: relative
 
-		&:after
-			position: absolute
-			content: ''
-			bottom: 18px
-			left: 362px
-			width: 185px
-			height: 64px
-			background-image: url('../img/signature.png')
-			background-repeat: no-repeat
-			background-position: right
+// 		&:after
+// 			position: absolute
+// 			content: ''
+// 			bottom: 18px
+// 			left: 362px
+// 			width: 185px
+// 			height: 64px
+// 			background-image: url('../img/signature.png')
+// 			background-repeat: no-repeat
+// 			background-position: right
 
-	&__text 
-		line-height: 1.38em
-		font-size: 1em
-		padding: 16px 1px 2px
-		word-spacing: 0.17em
-		letter-spacing: -0.021em
-		width: 555px
+// 	&__text 
+// 		line-height: 1.38em
+// 		font-size: 1em
+// 		padding: 16px 1px 2px
+// 		word-spacing: 0.17em
+// 		letter-spacing: -0.021em
+// 		width: 555px
 
-		span 
-			font-weight: 700
+// 		span 
+// 			font-weight: 700
 
 
 	
